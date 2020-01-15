@@ -10,11 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var testArray:Array<String> = arrayOf("이름","2")
-        main(testArray)
+//        main(testArray)
     }
 
     fun main(args: Array<String>){
-        val sc: Scanner = Scanner(System.`in`)
+        val sc: Scanner = Scanner(System.`in`)      //system call error
         val name = sc.nextLine()
         val age = sc.nextLine()
         println("name: $name, age: $age")
